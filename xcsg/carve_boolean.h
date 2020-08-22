@@ -19,7 +19,7 @@
 #include <vector>
 #include <memory>
 class xpolyhedron;
-#include <carve/csg.hpp>
+#include "carve/csg.hpp"
 #include "qhull/qhull3d.h"
 
 class carve_boolean {

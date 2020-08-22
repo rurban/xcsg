@@ -23,6 +23,7 @@ extern "C" {
 
 #include <stdexcept>
 #include <stdlib.h>
+#include <stdarg.h>
 
 /*-<a                             href="qh-user_r.htm#TOC"
   >-------------------------------</a><a name="qh_exit">-</a>

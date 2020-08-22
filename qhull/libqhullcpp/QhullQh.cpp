@@ -197,6 +197,7 @@ notes:
     fgets() is not trapped like fprintf()
     Do not throw errors from here.  Use qh_errexit;
 */
+#if 0
 extern "C"
 void qh_fprintf(qhT *qh, FILE *fp, int msgcode, const char *fmt, ... ) {
     va_list args;
@@ -235,3 +236,4 @@ void qh_fprintf(qhT *qh, FILE *fp, int msgcode, const char *fmt, ... ) {
     qhullQh->appendQhullMessage(newMessage);
     va_end(args);
 } /* qh_fprintf */
+#endif

@@ -159,6 +159,8 @@ notes:
     Do not throw errors from here.  Use qh_errexit_rbox;
     A similar technique can be used for qh_fprintf to capture all of its output
 */
+// also defined in RBoxPoints.h
+#if 0
 extern "C"
 void qh_fprintf_rbox(qhT *qh, FILE*, int msgcode, const char *fmt, ... ) {
     va_list args;
@@ -221,4 +223,4 @@ void qh_fprintf_rbox(qhT *qh, FILE*, int msgcode, const char *fmt, ... ) {
     }
     va_end(args);
 } /* qh_fprintf_rbox */
-
+#endif

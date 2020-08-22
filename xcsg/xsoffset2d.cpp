@@ -34,7 +34,8 @@ xsoffset2d::xsoffset2d(const cf_xmlNode& node)
    m_delta   = node.get_property("delta",0.0);
    m_chamfer = ("true" == node.get_property("chamfer","false"))? true : false;
 
-   insert_set(node,"include",m_incl);
+   #warning insert_set
+   //insert_set(node,"include",m_incl);
 }
 
 
